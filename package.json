@@ -1,0 +1,30 @@
+{
+  "name": "my-spec",
+  "description": "A lerna vuepress project",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install ",
+    "init": "pnpm install --no-frozen-lockfile",
+    "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint README.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-webpack": "2.0.0-rc.20",
+    "@vuepress/theme-default": "2.0.0-rc.88",
+    "husky": "^9.1.7",
+    "lerna": "^8.2.3",
+    "sass-embedded": "^1.86.0",
+    "sass-loader": "^16.0.5",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.20"
+  }
+}
