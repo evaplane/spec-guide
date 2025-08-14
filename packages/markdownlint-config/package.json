@@ -1,0 +1,13 @@
+{
+  "name": "markdownlint-config-eva",
+  "version": "1.0.0",
+  "description": "文档规范",
+  "main": "index.json",
+  "keywords": [
+    "markdown",
+    "lint",
+    "eva"
+  ],
+  "author": "eva",
+  "license": "ISC"
+}
