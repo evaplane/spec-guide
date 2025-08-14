@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "husky install ",
+    "prepare": "husky",
     "init": "pnpm install --no-frozen-lockfile",
     "clean": "lerna clean && rm -rf node_modules",
     "test": "lerna run test",
