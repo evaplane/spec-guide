@@ -3,18 +3,21 @@ import { defineUserConfig } from 'vuepress'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
-  lang: 'zh-CN',
+ locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'eva',
+      description: 'eva的前端规范工程化',
+    },
+  },
   base: '/spec-guide/',
-  title: 'eva的第一个前端规范',
 
   theme: defaultTheme({
     logo: '/img/img1.png',
-
-    navbar: ['/', '/get-started'],
-  }),
-   themeConfig: {
-    nav: [
-      { text: '首页', link: '/index.md' },
+    repo: 'evaplane/spec-guide',
+    docsDir: 'docs',
+    navbar: [
+        { text: '首页', link: '/get-started.md' },
       {
         text: '编码规范',
         items: [
@@ -48,7 +51,7 @@ export default defineUserConfig({
         items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
       },
     ],
-    sidebar: [
+      sidebar: [
       {
         title: '编码规范',
         children: [
@@ -106,14 +109,10 @@ export default defineUserConfig({
         children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
       },
     ],
-    logo: '/img/logo.png',
-    repo: 'encode-studio-fe/fe-spec',
-    searchMaxSuggestions: 10,
-    docsDir: 'docs',
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/evaplane/spec-guide" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
@@ -122,7 +121,7 @@ export default defineUserConfig({
         link: 'https://github.com/evaplane/spec-guide',
       },
     },
-  },
+  }),
   head: [
     ['link', { rel: 'icon', href: '/img/img1.png' }],
     [
@@ -133,6 +132,5 @@ export default defineUserConfig({
       },
     ],
   ],
-
   bundler: webpackBundler(),
 })
