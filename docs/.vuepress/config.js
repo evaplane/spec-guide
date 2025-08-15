@@ -17,10 +17,10 @@ export default defineUserConfig({
     repo: 'evaplane/spec-guide',
     docsDir: 'docs',
     navbar: [
-        { text: '首页', link: '/get-started.md' },
+     { text: '首页', link: '/get-started.md' },
       {
         text: '编码规范',
-        items: [
+        children: [
           { text: 'HTML 编码规范', link: '/coding/html.md' },
           { text: 'CSS 编码规范', link: '/coding/css.md' },
           { text: 'JavaScript 编码规范', link: '/coding/javascript.md' },
@@ -30,7 +30,7 @@ export default defineUserConfig({
       },
       {
         text: '工程规范',
-        items: [
+        children: [
           { text: 'Git 规范', link: '/engineering/git.md' },
           { text: '文档规范', link: '/engineering/doc.md' },
           { text: 'CHANGELOG 规范', link: '/engineering/changelog.md' },
@@ -38,17 +38,17 @@ export default defineUserConfig({
       },
       {
         text: 'NPM包',
-        items: [
-          { text: 'eslint-config-encode', link: '/npm/eslint.md' },
-          { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
-          { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
-          { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
-          { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
-        ],
+        children: [
+          { text: 'eslint-config', link: '/npm/eslint.md' },
+          { text: 'stylelint-config', link: '/npm/stylelint.md' },
+          { text: 'commitlint-config', link: '/npm/commitlint.md' },
+          { text: 'markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: 'eslint-plugin', link: '/npm/eslint-plugin.md' },
+        ]
       },
       {
         text: '脚手架',
-        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+        children: [{ text: 'eva-lint', link: '/cli/encode-fe-lint.md' }],
       },
     ],
       sidebar: [
@@ -123,7 +123,7 @@ export default defineUserConfig({
     },
   }),
   head: [
-    ['link', { rel: 'icon', href: '/img/img1.png' }],
+    // ['link', { rel: 'icon', href: '/img/img1.png' }],
     [
       'meta',
       {
