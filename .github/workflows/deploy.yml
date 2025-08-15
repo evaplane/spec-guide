@@ -29,11 +29,3 @@ jobs:
                   BRANCH: gh-pages
                   FOLDER: docs/.vuepress/dist
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-
-            - name: Path
-              run: |
-                cd dist
-            
-                find . -name "*.html" -exec sed -i 's|href="/|href="./|g' {} +
-                find . -name "*.html" -exec sed -i 's|src="/|src="./|g' {} +
-                find . -name "*.css" -exec sed -i 's|url("/|url("./|g' {} +
