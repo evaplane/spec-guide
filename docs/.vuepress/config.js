@@ -5,8 +5,7 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
   lang: 'zh-CN',
   base: '/spec-guide/',
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'eva的第一个前端规范',
 
   theme: defaultTheme({
     logo: '/img/img1.png',
@@ -119,8 +118,8 @@ export default defineUserConfig({
 
     extendFrontmatter: {
       author: {
-        name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
+        name: 'eva',
+        link: 'https://github.com/evaplane/spec-guide',
       },
     },
   },
