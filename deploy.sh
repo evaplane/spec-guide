@@ -1,21 +1,24 @@
 #!/usr/bin/env sh
 
-# 抛出异常信息
+# 确保脚本抛出遇到的错误
 set -e
 
-push_addr= `git remote get-url origin`
-commit_info = `git describe --all --always --long`
-dist_path = `docs/.vuepress/dist`
-push_branch = gh-pages
 
-npm run doc:build #生成静态资源站点
+push_addr=`git remote get-url --push origin`
+commit_info=`git describe --all --always --long`
+dist_path=docs/.vuepress/dist
+push_branch=gh-pages
 
-cd $dist_path # 跳转到构建好的静态资源站点
+# 生成静态文件
+npm run docs:build
 
-git init # 初始化 Git 仓库
-git add -A # 添加所有文件
-git commit -m "deploy: $commit_info" # 提交并添加 commit 信息
-git push -f $push_addr HEAD: $push_branch # 推到 GitHub Pages 分支
+# 进入生成的文件夹
+cd $dist_path
 
-cd - # 回到初始工作目录
-rm -rf $dist_path # 删除构建好的静态资源站点
+git init
+git add -A
+git commit -m "deploy, $commit_info"
+git push -f $push_addr HEAD:$push_branch
+
+cd -
+rm -rf $dist_path
