@@ -1,7 +1,7 @@
 {
   "name": "markdownlint-config-eva",
   "version": "1.0.10",
-  "description": "文档规范",
+  "description": "markdown 文档规范",
   "main": "index.json",
   "keywords": [
     "markdown",
@@ -9,5 +9,17 @@
     "eva"
   ],
   "author": "eva",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "bb05dde8b90d295f6a6d2e2fcfa55f489a7ff01f",
+  "homepage": "https://github.com/evaplane/spec-guide#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaplane/spec-guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evaplane/spec-guide/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  },
 }

@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config",
+  "name": "stylelint-config-eva",
   "version": "1.0.10",
   "description": "css 规范",
   "main": "index.js",
@@ -30,5 +30,6 @@
     "jest": "^29.5.0",
     "stylelint": "^14.3.0",
     "stylelint-scss": "^4.1.0"
-  }
+  },
+  "gitHead": "bb05dde8b90d295f6a6d2e2fcfa55f489a7ff01f"
 }
