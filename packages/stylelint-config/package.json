@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-eva",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "css 规范",
   "main": "index.js",
   "scripts": {

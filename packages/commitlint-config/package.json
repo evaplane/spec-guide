@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-eva",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "index.js",
   "description": "eva Git规范",
   "keywords": [
