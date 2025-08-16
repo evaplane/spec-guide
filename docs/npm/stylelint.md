@@ -5,8 +5,9 @@ categories:
 tags:
   - 工程规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  name: eva
+  link:   link: https://github.com/evaplane/spec-guide
+
 ---
 
 # stylelint-config-encode

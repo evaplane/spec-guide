@@ -5,8 +5,8 @@ categories:
 tags:
   - 脚手架规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  name: eva
+  link: https://github.com/evaplane/spec-guide
 ---
 
 # encode-fe-lint
