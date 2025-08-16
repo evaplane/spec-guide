@@ -6,14 +6,13 @@ tags:
   - 工程规范
 author:
   name: eva
-  link:   link: https://github.com/evaplane/spec-guide
-
+  link: https://github.com/evaplane/spec-guide
 ---
 
 # stylelint-config-encode
 
 :::tip
-印客学院 CSS 规范
+eva CSS 规范
 :::
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。

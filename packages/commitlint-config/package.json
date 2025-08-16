@@ -2,21 +2,21 @@
   "name": "commitlint-config-encode",
   "version": "1.0.8",
   "main": "index.js",
-  "description": "印客学院 Git规范",
+  "description": "eva Git规范",
   "keywords": [
     "encode",
     "commit",
     "lint"
   ],
   "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "homepage": "https://github.com/evaplane/spec-guide#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+    "url": "git+https://github.com/evaplane/spec-guide.git"
   },
   "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+    "url": "https://github.com/evaplane/spec-guide/issues"
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"

@@ -6,14 +6,13 @@ tags:
   - 工程规范
 author:
   name: eva
-  link:   link: https://github.com/evaplane/spec-guide
-
+  link: https://github.com/evaplane/spec-guide
 ---
 
 # markdownlint-config-encode
 
 :::tip
-印客学院 文档 规范
+eva 文档 规范
 :::
 
 支持配套的 [markdownlint 可共享配置](https://www.npmjs.com/package/markdownlint#optionsconfig)。

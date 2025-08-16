@@ -6,8 +6,7 @@ tags:
   - 工程规范
 author:
   name: eva
-  link:   link: https://github.com/evaplane/spec-guide
-
+  link: https://github.com/evaplane/spec-guide
 ---
 
 # eslint-plugin-encode
