@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-encode",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "main": "index.js",
   "description": "eva Git规范",
   "keywords": [
