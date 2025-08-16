@@ -16,9 +16,10 @@ export default defineUserConfig({
     logo: '/img/img1.png',
     repo: 'evaplane/spec-guide',
     docsDir: 'docs',
+    searchMaxSuggestions:10,
     navbar: [
      { text: '首页', link: '/get-started.md' },
-      {
+     {
         text: '编码规范',
         children: [
           { text: 'HTML 编码规范', link: '/coding/html.md' },
@@ -51,64 +52,69 @@ export default defineUserConfig({
         children: [{ text: 'eva-lint', link: '/cli/encode-fe-lint.md' }],
       },
     ],
-      sidebar: [
-      {
-        title: '编码规范',
-        children: [
-          {
-            title: 'HTML 编码规范',
-            path: '/coding/html.md',
-          },
-          {
-            title: 'CSS 编码规范',
-            path: '/coding/css.md',
-          },
-          {
-            title: 'JavaScript 编码规范',
-            path: '/coding/javascript.md',
-          },
-          {
-            title: 'Typescript 编码规范',
-            path: '/coding/typescript.md',
-          },
-          {
-            title: 'Node 编码规范',
-            path: '/coding/node.md',
-          },
-        ],
-      },
-      {
-        title: '工程规范',
-        children: [
-          {
-            title: 'Git 规范',
-            path: '/engineering/git.md',
-          },
-          {
-            title: '文档规范',
-            path: '/engineering/doc.md',
-          },
-          {
-            title: 'CHANGELOG 规范',
-            path: '/engineering/changelog.md',
-          },
-        ],
-      },
-      {
-        title: 'NPM包',
-        children: [
-          { title: 'eslint-config-encode', path: '/npm/eslint.md' },
-          { title: 'stylelint-config-encode', path: '/npm/stylelint.md' },
-          { title: 'commitlint-config-encode', path: '/npm/commitlint.md' },
-          { title: 'markdownlint-config-encode', path: '/npm/markdownlint.md' },
-          { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
-        ],
-      },
-      {
-        title: '脚手架',
-        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
-      },
-    ],
+    // sidebar: [
+    //   {
+    //     text: '编码规范',
+    //     collapsible:true,
+    //     children: [
+    //       {
+    //         text: 'HTML 编码规范',
+    //         link: '/coding/html.md',
+    //       },
+    //       {
+    //         text: 'CSS 编码规范',
+    //         link: '/coding/css.md',
+    //       },
+    //       {
+    //         text: 'JavaScript 编码规范',
+    //         link: '/coding/javascript.md',
+    //       },
+    //       {
+    //         text: 'Typescript 编码规范',
+    //         link: '/coding/typescript.md',
+    //       },
+    //       {
+    //         text: 'Node 编码规范',
+    //         linkpath: '/coding/node.md',
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     text: '工程规范',
+    //     collapsible:true,
+    //     children: [
+    //       {
+    //         text: 'Git 规范',
+    //         link: '/engineering/git.md',
+    //       },
+    //       {
+    //         text: '文档规范',
+    //         link: '/engineering/doc.md',
+    //       },
+    //       {
+    //         text: 'CHANGELOG 规范',
+    //         link: '/engineering/changelog.md',
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     text: 'NPM包',
+    //     collapsible:true,
+    //     children: [
+    //       { text: 'eslint-config-encode', link: '/npm/eslint.md' },
+    //       { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
+    //       { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
+    //       { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
+    //       { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
+    //     ],
+    //   },
+    //   {
+    //     text: '脚手架',
+    //     collapsible:true,
+    //     children: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+    //   },
+    // ],
+    sidebar:'heading',
     footer: {
       createYear: 2023,
       copyrightInfo:

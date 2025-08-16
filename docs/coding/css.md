@@ -5,8 +5,8 @@ categories:
 tags:
     - 编码规范
 author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+    name: eva
+    link: https://github.com/evaplane/spec-guide
 ---
 
 # CSS 编码规范
