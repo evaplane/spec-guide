@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/spec-guide/img/logo.png"><meta name="keywords" content="前端编码规范工程化"><title>前端编码规范</title><meta name="description" content="eva的前端规范工程化">
+    <link rel="stylesheet" href="/spec-guide/assets/css/styles.e91d1ab9.css">
+    <link rel="preload" href="/spec-guide/assets/js/runtime~app.99554f2c.js" as="script"><link rel="preload" href="/spec-guide/assets/css/styles.e91d1ab9.css" as="style"><link rel="preload" href="/spec-guide/assets/js/113.067d332b.js" as="script"><link rel="preload" href="/spec-guide/assets/js/app.71930f8c.js" as="script">
+    <link rel="prefetch" href="/spec-guide/assets/js/coding_javascript.html.07498dc2.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/coding_typescript.html.050d11e0.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/coding_css.html.46919798.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/coding_html.html.55f87eea.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/coding_node.html.42088357.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/npm_eslint.html.66704446.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/engineering_changelog.html.29a957e4.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/cli_encode-fe-lint.html.069d0b2e.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/engineering_doc.html.0a23b1cb.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/engineering_git.html.e88b1f01.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/npm_eslint-plugin.html.6981aed5.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/index.html.372d4d0b.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/npm_commitlint.html.d87c4572.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/npm_markdownlint.html.a96bdf1d.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/npm_stylelint.html.baf1202f.js" as="script"><link rel="prefetch" href="/spec-guide/assets/js/404.html.ac01f7b8.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-9c364068><main class="page" data-v-9c364068><div vp-content data-v-9c364068><h1 data-v-9c364068>404</h1><blockquote data-v-9c364068>There&#39;s nothing here.</blockquote><a class="route-link" href="/spec-guide/" data-v-9c364068>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script src="/spec-guide/assets/js/runtime~app.99554f2c.js" defer></script><script src="/spec-guide/assets/js/113.067d332b.js" defer></script><script src="/spec-guide/assets/js/app.71930f8c.js" defer></script>
+  </body>
+</html>
