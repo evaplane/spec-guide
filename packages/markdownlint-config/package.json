@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-eva",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "markdown 文档规范",
   "main": "index.json",
   "keywords": [
@@ -23,6 +23,5 @@
   },
   "dependencies": {
     "markdownlint": "^0.28.2"
-  },
-  "devDependencies": {}
+  }
 }
