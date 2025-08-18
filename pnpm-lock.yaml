@@ -105,6 +105,22 @@ importers:
         specifier: ^7.3.0
         version: 7.11.0(eslint@8.57.1)
 
+  packages/eslint-plugin:
+    dependencies:
+      fs-extra:
+        specifier: ^11.3.1
+        version: 11.3.1
+      require-all:
+        specifier: ^3.0.0
+        version: 3.0.0
+    devDependencies:
+      eslint:
+        specifier: ^8.57.1
+        version: 8.57.1
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@24.2.1)
+
   packages/markdownlint-config:
     dependencies:
       markdownlint:
@@ -5610,6 +5626,10 @@ packages:
   renderkid@3.0.0:
     resolution: {integrity: sha512-q/7VIQA8lmM1hF+jn+sFSPWGlMkSAeNYcPLmDQx2zzuiDfaLrOmumR8iaUKlenFgh0XRPIUeSPlH3A+AW3Z5pg==}
 
+  require-all@3.0.0:
+    resolution: {integrity: sha512-jPGN876lc5exWYrMcgZSd7U42P0PmVQzxnQB13fCSzmyGnqQWW4WUz5DosZ/qe24hz+5o9lSvW2epBNZ1xa6Fw==}
+    engines: {node: '>= 0.8'}
+
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -10578,7 +10598,7 @@ snapshots:
   execa@5.1.1:
     dependencies:
       cross-spawn: 7.0.6
-      get-stream: 6.0.0
+      get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.0
       merge-stream: 2.0.0
@@ -13465,6 +13485,8 @@ snapshots:
       htmlparser2: 6.1.0
       lodash: 4.17.21
       strip-ansi: 6.0.1
+
+  require-all@3.0.0: {}
 
   require-directory@2.1.1: {}
 
