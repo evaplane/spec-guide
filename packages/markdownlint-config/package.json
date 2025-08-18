@@ -10,7 +10,6 @@
   ],
   "author": "eva",
   "license": "ISC",
-  "gitHead": "bb05dde8b90d295f6a6d2e2fcfa55f489a7ff01f",
   "homepage": "https://github.com/evaplane/spec-guide#readme",
   "repository": {
     "type": "git",
@@ -19,7 +18,11 @@
   "bugs": {
     "url": "https://github.com/evaplane/spec-guide/issues"
   },
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  },
   "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.5.0"
-  }
+    "markdownlint": "^0.28.2"
+  },
+  "devDependencies": {}
 }
